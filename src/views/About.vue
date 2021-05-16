@@ -187,6 +187,9 @@ export default {
       javaValue: 80,
     };
   },
+  created() {
+    document.documentElement.scrollTop = 0;
+  },
 };
 </script>
 

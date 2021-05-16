@@ -7,7 +7,7 @@
     <div class="description">
       <ul>
         <h5><li>Intern at ITGlance (Full Stack)</li></h5>
-        <h5><li>One year experience as frontend developer</li></h5>
+        <h5><li>One year experience as web developer</li></h5>
         <h5><li>Bsc. CSIT from Tribhuvan University</li></h5>
         <h5><li>+2 Science</li></h5>
       </ul>
@@ -46,6 +46,9 @@ export default {
       slide: 1,
       autoplay: true,
     };
+  },
+  created() {
+    document.documentElement.scrollTop = 0;
   },
 };
 </script>

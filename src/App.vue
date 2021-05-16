@@ -68,16 +68,6 @@
             </q-item-section>
           </q-item></router-link
         >
-        <router-link to="/blogs"
-          ><q-item clickable>
-            <q-item-section avatar>
-              <q-icon name="book" />
-            </q-item-section>
-            <q-item-section>
-              <q-item-label>Blogs</q-item-label>
-            </q-item-section>
-          </q-item></router-link
-        >
         <q-item
           clickable
           tag="a"
@@ -134,6 +124,20 @@
             <q-item-label caption>@rohitprasain</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item
+          clickable
+          tag="a"
+          target="_blank"
+          href="https://cswithrohit1.blogspot.com/"
+        >
+          <q-item-section avatar>
+            <q-icon name="book" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Blogs</q-item-label>
+            <q-item-label caption>@blogspot</q-item-label>
+          </q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 
@@ -148,6 +152,9 @@ export default {
   name: "App",
 
   components: {},
+  created() {
+    document.documentElement.scrollTop = 0;
+  },
 
   data() {
     return {

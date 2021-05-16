@@ -68,6 +68,9 @@ export default {
   data() {
     return {};
   },
+  created() {
+    document.documentElement.scrollTop = 0;
+  },
 };
 </script>
 

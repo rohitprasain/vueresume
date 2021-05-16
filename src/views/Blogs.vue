@@ -3,7 +3,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  created() {
+    document.documentElement.scrollTop = 0;
+  },
+};
 </script>
 
 <style></style>
