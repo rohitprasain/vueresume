@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class=" bg-grey-2">
       <q-toolbar>
-        <q-toolbar-title class="text-center text-black ">
+        <q-toolbar-title class="text-center text-black main">
           Hello 👋
         </q-toolbar-title>
         <q-btn
@@ -137,6 +137,5 @@ export default {
 a {
   text-decoration: none;
   color: black;
-  /* text-transform: capitalize; */
 }
 </style>
