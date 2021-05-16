@@ -164,6 +164,6 @@ a {
 }
 
 .views {
-  margin-left: 5rem;
+  /* margin-left: 3rem; */
 }
 </style>

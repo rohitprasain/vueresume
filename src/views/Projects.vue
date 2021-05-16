@@ -9,7 +9,7 @@
           <img src="images/adhikariclothing.png" alt="no" />
         </div>
         <div class="projectdescription">
-          <h4>AdhikariClothing</h4>
+          <h5>AdhikariClothing</h5>
           <h6>Website for a clothing shop</h6>
           <p>Laravel(full stack) and Heroku(deployment)</p>
           <a href="http://adhikariclothing.herokuapp.com/" target="_blank">
@@ -22,7 +22,7 @@
           <img src="images/agrotech_nepal.png" alt="no" />
         </div>
         <div class="projectdescription">
-          <h4>Agrotech Nepal</h4>
+          <h5>Agrotech Nepal</h5>
           <h6>Website to buy agriculture tools</h6>
           <p>React, Graphql(Hasura) and Heroku</p>
           <a href="http://agrotechnepal.herokuapp.com/" target="_blank">
@@ -35,7 +35,7 @@
           <img src="images/snake_game.png" alt="no" />
         </div>
         <div class="projectdescription">
-          <h4>Color changing snake</h4>
+          <h5>Color changing snake</h5>
           <h6>Snake change color after eating</h6>
           <p>C++ (OOP)</p>
           <a href="snakegame.exe" download>
@@ -48,7 +48,7 @@
           <img src="images/kaji_creation.png" alt="no" />
         </div>
         <div class="projectdescription">
-          <h4>Kaji Creation</h4>
+          <h5>Kaji Creation</h5>
           <h6>Responsive landing page for company</h6>
           <p>Figma(for design) , Html ,CSS and JavaScript</p>
           <a
@@ -80,7 +80,7 @@ main {
     margin-left: 1rem;
     // font-family: "Langar", cursive;
   }
-  h4,
+  h5,
   h6,
   p {
     line-height: 0.1rem;
