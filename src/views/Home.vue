@@ -9,7 +9,7 @@
 
 <script>
 // @ is an alias to /src
-
+import "../styles/my.scss";
 export default {
   name: "Home",
   components: {},
@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu+Mono:wght@700&display=swap");
 main {
   margin-top: 10rem;
   text-align: center;
