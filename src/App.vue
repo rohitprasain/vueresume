@@ -1,9 +1,9 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy bg-cyan">
+    <q-header elevated class=" bg-grey-2">
       <q-toolbar>
-        <q-toolbar-title class="text-center">
-          Hello Everyone
+        <q-toolbar-title class="text-center text-black ">
+          Hello 👋
         </q-toolbar-title>
         <q-btn
           flat
@@ -12,6 +12,7 @@
           @click="leftDrawerOpen = !leftDrawerOpen"
           aria-label="Menu"
           icon="menu"
+          class="text-black"
         />
       </q-toolbar>
     </q-header>
@@ -21,72 +22,92 @@
       show-if-above
       bordered
       content-class="bg-grey-2"
+      :width="250"
     >
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="school" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
+        <q-item-label header class="text-black text-center "
+          ><q-avatar size="75px"> <img src="images/logo.png" /> </q-avatar
+        ></q-item-label>
+        <router-link to="/"
+          ><q-item clickable>
+            <q-item-section avatar>
+              <q-icon name="home" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label>Home</q-item-label>
+            </q-item-section>
+          </q-item></router-link
+        >
+        <router-link to="/about"
+          ><q-item clickable>
+            <q-item-section avatar>
+              <q-icon name="people" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label>About</q-item-label>
+            </q-item-section>
+          </q-item></router-link
+        >
+        <router-link to="/project"
+          ><q-item clickable>
+            <q-item-section avatar>
+              <q-icon name="work" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label>Projects</q-item-label>
+            </q-item-section>
+          </q-item></router-link
+        >
+        <router-link to="/blog"
+          ><q-item clickable>
+            <q-item-section avatar>
+              <q-icon name="book" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label>Blogs</q-item-label>
+            </q-item-section>
+          </q-item></router-link
+        >
         <q-item
           clickable
           tag="a"
           target="_blank"
-          href="https://github.com/quasarframework/"
+          href="https://www.linkedin.com/in/rohit-prasain-33799118b/"
         >
           <q-item-section avatar>
-            <q-icon name="code" />
+            <q-icon name="linkedin" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
+            <q-item-label>LinkedIn</q-item-label>
+            <q-item-label caption>@rohitprasain</q-item-label>
           </q-item-section>
         </q-item>
         <q-item
           clickable
           tag="a"
           target="_blank"
-          href="https://chat.quasar.dev"
-        >
-          <q-item-section avatar>
-            <q-icon name="chat" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item
-          clickable
-          tag="a"
-          target="_blank"
-          href="https://forum.quasar.dev"
-        >
-          <q-item-section avatar>
-            <q-icon name="forum" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item
-          clickable
-          tag="a"
-          target="_blank"
-          href="https://twitter.com/quasarframework"
+          href="https://twitter.com/rohitprasain99"
         >
           <q-item-section avatar>
             <q-icon name="rss_feed" />
           </q-item-section>
           <q-item-section>
             <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
+            <q-item-label caption>@rohitprasain99</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item
+          clickable
+          tag="a"
+          target="_blank"
+          href="https://www.facebook.com/hawa.manche.925/"
+        >
+          <q-item-section avatar>
+            <q-icon name="facebook" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Facebook</q-item-label>
+            <q-item-label caption>@rohitprasain</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -112,4 +133,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+a {
+  text-decoration: none;
+  color: black;
+  /* text-transform: capitalize; */
+}
+</style>
