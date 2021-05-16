@@ -48,7 +48,7 @@
             </q-item-section>
           </q-item></router-link
         >
-        <router-link to="/project"
+        <router-link to="/projects"
           ><q-item clickable>
             <q-item-section avatar>
               <q-icon name="work" />
@@ -58,7 +58,7 @@
             </q-item-section>
           </q-item></router-link
         >
-        <router-link to="/blog"
+        <router-link to="/blogs"
           ><q-item clickable>
             <q-item-section avatar>
               <q-icon name="book" />
