@@ -1,18 +1,39 @@
 <template>
   <main>
-    <h4>I'm</h4>
-    <h4 class="name">Rohit Prasain</h4>
-    <h5>Beginner Level Full stack developer</h5>
-    <h5>Kathmandu,Nepal</h5>
+    <div class="intro">
+      <div class="innerintro">
+        <h4>I'm</h4>
+        <h4 class="name">Rohit Prasain</h4>
+        <h5>Full stack developer</h5>
+        <h5>Kathmandu,Nepal</h5>
+      </div>
+    </div>
+    <div class="">
+      <About />
+    </div>
+    <div class="extra">
+      <Project />
+    </div>
+    <div class="extra">
+      <Experience />
+    </div>
+    <div class="extra">
+      <Blogs />
+    </div>
   </main>
 </template>
 
 <script>
 // @ is an alias to /src
 import "../styles/my.scss";
+import About from "../views/About";
+import Project from "../views/Projects";
+import Experience from "../views/Experience";
+import Blogs from "../views/Blogs";
+
 export default {
   name: "Home",
-  components: {},
+  components: { About, Project, Experience, Blogs },
   data() {
     return {};
   },
@@ -21,13 +42,23 @@ export default {
 
 <style scoped lang="scss">
 main {
-  margin-top: 10rem;
-  text-align: center;
+  // min-height: 90vh;
+  // margin-top: 10rem;
   font-family: "Ubuntu Mono", monospace;
   font-weight: bold;
-  align-items: center;
-  .name {
-    font-family: "Langar", cursive;
+  .intro {
+    .name {
+      font-family: "Langar", cursive;
+    }
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    // flex-direction: column;
+    align-items: center;
+  }
+  .extra {
+    margin-top: 10rem;
   }
 }
 </style>

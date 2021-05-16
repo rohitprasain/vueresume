@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div class="mainproject">
     <div class="topic">
       <h4>Technical Skills</h4>
     </div>
@@ -80,7 +80,7 @@
 
     <h5>Languages</h5>
     <div class="familiar">
-      <div class="skills">
+      <div class="language">
         <q-circular-progress
           show-value
           font-size="10px"
@@ -97,7 +97,7 @@
         </q-circular-progress>
         <p>C</p>
       </div>
-      <div class="skills">
+      <div class="language">
         <q-circular-progress
           show-value
           font-size="10px"
@@ -114,7 +114,7 @@
         </q-circular-progress>
         <p>Python</p>
       </div>
-      <div class="skills">
+      <div class="language">
         <q-circular-progress
           show-value
           font-size="10px"
@@ -132,7 +132,7 @@
         <p>C++</p>
       </div>
 
-      <div class="skills">
+      <div class="language">
         <q-circular-progress
           show-value
           font-size="10px"
@@ -149,7 +149,7 @@
         </q-circular-progress>
         <p>Javascript</p>
       </div>
-      <div class="skills">
+      <div class="language">
         <q-circular-progress
           show-value
           font-size="10px"
@@ -167,7 +167,7 @@
         <p>Java</p>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
@@ -191,7 +191,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
+.mainproject {
   font-family: "Ubuntu Mono", monospace;
   h5 {
     font-family: "Langar", cursive;
@@ -203,7 +203,8 @@ main {
     display: flex;
     justify-content: space-around;
   }
-  .skills {
+  .skills,
+  .language {
     max-width: 130px;
     // border: 2px solid red;
     p {
@@ -211,6 +212,12 @@ main {
       font-size: 1rem;
       font-weight: bold;
     }
+  }
+  .familiar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>

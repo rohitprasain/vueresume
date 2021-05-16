@@ -51,10 +51,20 @@
         <router-link to="/projects"
           ><q-item clickable>
             <q-item-section avatar>
-              <q-icon name="work" />
+              <q-icon name="website" />
             </q-item-section>
             <q-item-section>
               <q-item-label>Projects</q-item-label>
+            </q-item-section>
+          </q-item></router-link
+        >
+        <router-link to="/experience"
+          ><q-item clickable>
+            <q-item-section avatar>
+              <q-icon name="computer" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-label>Experience</q-item-label>
             </q-item-section>
           </q-item></router-link
         >
@@ -68,6 +78,20 @@
             </q-item-section>
           </q-item></router-link
         >
+        <q-item
+          clickable
+          tag="a"
+          target="_blank"
+          href="https://github.com/rohitprasain?tab=repositories"
+        >
+          <q-item-section avatar>
+            <q-icon name="code" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Github</q-item-label>
+            <q-item-label caption>@rohitprasain</q-item-label>
+          </q-item-section>
+        </q-item>
         <q-item
           clickable
           tag="a"
@@ -113,7 +137,7 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container class="views">
       <router-view />
     </q-page-container>
   </q-layout>
@@ -137,5 +161,9 @@ export default {
 a {
   text-decoration: none;
   color: black;
+}
+
+.views {
+  margin-left: 5rem;
 }
 </style>

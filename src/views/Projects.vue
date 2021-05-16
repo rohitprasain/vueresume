@@ -78,7 +78,7 @@ main {
   .project {
     text-align: left;
     margin-left: 1rem;
-    font-family: "Langar", cursive;
+    // font-family: "Langar", cursive;
   }
   h4,
   h6,
