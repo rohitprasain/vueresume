@@ -17,9 +17,6 @@
     <div class="extra">
       <Experience />
     </div>
-    <div class="extra">
-      <Blogs />
-    </div>
   </main>
 </template>
 
@@ -29,11 +26,10 @@ import "../styles/my.scss";
 import About from "../views/About";
 import Project from "../views/Projects";
 import Experience from "../views/Experience";
-import Blogs from "../views/Blogs";
 
 export default {
   name: "Home",
-  components: { About, Project, Experience, Blogs },
+  components: { About, Project, Experience },
   data() {
     return {};
   },
